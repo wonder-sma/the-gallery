@@ -1,0 +1,41 @@
+{
+  "name": "my-ts-react-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",
+    "styled-components": "^5.3.6",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.4.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/react-redux": "^7.1.25",
+    "@types/redux-thunk": "^2.1.32",
+    "@types/styled-components": "^5.1.26",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@types/uuid": "^9.0.1",
+    "@vitejs/plugin-react": "^3.1.0",
+    "jest": "^29.4.3",
+    "jest-environment-jsdom": "^29.4.3",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4"
+  }
+}
