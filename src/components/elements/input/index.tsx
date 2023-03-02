@@ -12,19 +12,19 @@ const StyledInput = styled.input`
   border-radius: 8px;
   box-shadow: 0 0 8px 2px rgb(0 0 0 / 10%);
   outline: none;
-  transition: all 0.3s;
+  transition: all 0.2s;
 
   @media only screen and (hover: hover) {
     &:hover {
       box-shadow: 0 0 8px 4px rgb(0 0 0 / 20%);
-      transition: all 0.3s;
+      transition: all 0.2s;
     }
   }
 
   &:focus {
     border: 1px solid gray;
     box-shadow: 0 0 8px 4px rgb(0 0 0 / 25%);
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 `;
 

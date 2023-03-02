@@ -10,9 +10,8 @@ const StyledCard = styled.li`
   align-items: center;
   padding: 6px;
   list-style: none;
-  border: 2px solid white;
   border-radius: 8px;
-  box-shadow: 0 0 20px rgb(0 0 0 / 60%);
+  box-shadow: 0 0 20px 2px rgb(0 0 0 / 30%);
 
   .card-layout__image {
     width: 280px;

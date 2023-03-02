@@ -18,20 +18,20 @@ const StyledImage = styled.div`
     user-select: none;
     opacity: 1;
     transform: scale(1);
-    transition: all 0.5s;
+    transition: all 0.4s;
 
     @media only screen and (hover: hover) {
       &:not(.img_full-size):hover {
         opacity: 0.9;
         transform: scale(1.03);
-        transition: all 0.3s;
+        transition: all 0.2s;
       }
     }
 
     &:active {
       opacity: 0.9;
       transform: scale(1.03);
-      transition: all 0.3s;
+      transition: all 0.2s;
     }
 
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

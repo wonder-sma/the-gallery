@@ -18,6 +18,7 @@ const StyledComment = styled.div`
     resize: none;
     overflow: hidden;
     border: none;
+    border-radius: 8px;
     outline: none;
     transition: border 0.1s, box-shadow 0.2s;
 
