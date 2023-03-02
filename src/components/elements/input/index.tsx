@@ -10,7 +10,7 @@ const StyledInput = styled.input`
   font-family: "Trebuchet MS", sans-serif;
   border: 1px solid darkgray;
   border-radius: 8px;
-  box-shadow: 0 0 8px 4px rgb(0 0 0 / 10%);
+  box-shadow: 0 0 8px 2px rgb(0 0 0 / 10%);
   outline: none;
   transition: all 0.3s;
 
@@ -23,7 +23,7 @@ const StyledInput = styled.input`
 
   &:focus {
     border: 1px solid gray;
-    box-shadow: 0 0 8px 4px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 8px 4px rgb(0 0 0 / 25%);
     transition: all 0.3s;
   }
 `;

@@ -16,16 +16,25 @@ const StyledImage = styled.div`
     border-radius: 8px;
     cursor: pointer;
     user-select: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     opacity: 1;
     transform: scale(1);
-    transition: all 0.4s;
+    transition: all 0.5s;
 
-    &:not(.img_full-size):hover {
+    @media only screen and (hover: hover) {
+      &:not(.img_full-size):hover {
+        opacity: 0.9;
+        transform: scale(1.03);
+        transition: all 0.3s;
+      }
+    }
+
+    &:active {
       opacity: 0.9;
       transform: scale(1.03);
       transition: all 0.3s;
     }
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
   .img_full-size {

@@ -29,6 +29,8 @@ const StyledButton = styled.button`
     background-color: #065dd6;
     transition: all 0.3s;
   }
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 `;
 
 type ButtonProps = {

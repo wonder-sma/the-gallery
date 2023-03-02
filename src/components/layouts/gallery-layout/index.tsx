@@ -18,6 +18,7 @@ const StyledGallery = styled.div`
       line-height: 1.25em;
       font-family: "Trebuchet MS", sans-serif;
       color: #e83e8c;
+      user-select: none;
     }
   }
 

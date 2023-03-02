@@ -19,7 +19,23 @@ const StyledComment = styled.div`
     overflow: hidden;
     border: none;
     outline: none;
-    transition: all 0.2s;
+    transition: border 0.1s, box-shadow 0.2s;
+
+    @media only screen and (hover: hover) {
+      &:hover {
+        border: 1px solid darkgray;
+        border-radius: 8px;
+        box-shadow: 0 0 8px 4px rgb(0 0 0 / 10%);
+        transition: border 0.1s, box-shadow 0.2s;
+      }
+    }
+
+    &:focus {
+      border: 1px solid gray;
+      border-radius: 8px;
+      box-shadow: 0 0 8px 4px rgb(0 0 0 / 20%);
+      transition: border 0.1s, box-shadow 0.2s;
+    }
 
     &:not(:active, :focus, :hover)::placeholder {
       font-size: 48px;
@@ -31,22 +47,6 @@ const StyledComment = styled.div`
       color: transparent;
       transition: all 0.1s;
     }
-  }
-
-  @media only screen and (hover: hover) {
-    .comment:hover {
-      border: 1px solid darkgray;
-      border-radius: 8px;
-      box-shadow: 0 0 8px 4px rgb(0 0 0 / 10%);
-      transition: all 0.2s;
-    }
-  }
-
-  .comment:focus {
-    border: 1px solid gray;
-    border-radius: 8px;
-    box-shadow: 0 0 8px 4px rgb(0 0 0 / 20%);
-    transition: all 0.2s;
   }
 `;
 
