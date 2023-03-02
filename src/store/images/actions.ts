@@ -1,5 +1,3 @@
-import comment from '../../components/elements/comment';
-import image from '../../components/elements/image';
 import { AppDispatch } from '../index';
 import { ImagesActionTypes, Errors } from './types';
 import { v4 as uuidv4 } from 'uuid';

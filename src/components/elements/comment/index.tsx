@@ -20,6 +20,17 @@ const StyledComment = styled.div`
     border: none;
     outline: none;
     transition: all 0.2s;
+
+    &:not(:active, :focus, :hover)::placeholder {
+      font-size: 48px;
+      color: darkgray;
+      transition: all 0.1s;
+    }
+
+    &::placeholder {
+      color: transparent;
+      transition: all 0.1s;
+    }
   }
 
   @media only screen and (hover: hover) {
@@ -72,6 +83,7 @@ const Comment: React.FC<CommentProps> = (props) => {
           maxLength={props.maxLength}
           onBlur={onChange}
           onKeyDown={onEnterPress}
+          placeholder="+"
         />
       </Form>
     </StyledComment>
