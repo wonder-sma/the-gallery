@@ -3,6 +3,7 @@ import { ImagesAction, ImagesActionTypes, ImagesState } from './types';
 const initialState: ImagesState = {
   images: [],
   errors: {},
+  loadings: {},
 };
 
 export const imagesReducer = (state = initialState, action: ImagesAction): ImagesState => {
@@ -33,6 +34,9 @@ export const imagesReducer = (state = initialState, action: ImagesAction): Image
           })
         ]
       };
+
+    case ImagesActionTypes.SET_LOADING:
+      return { ...state, loadings: { ...state.loadings, ...action.payload } };
 
     default:
       return state;

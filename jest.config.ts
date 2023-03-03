@@ -2,5 +2,8 @@ export default {
   transform: {
     '^.+\\.tsx?$': 'ts-jest'
   },
-  testEnvironment: 'jsdom'
+  testEnvironment: 'jsdom',
+  testEnvironmentOptions: {
+    'resources': 'usable'
+  },
 };

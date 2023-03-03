@@ -28,7 +28,7 @@ const StyledImage = styled.div`
       }
     }
 
-    &:active {
+    &:not(.img_full-size):active {
       opacity: 0.9;
       transform: scale(1.03);
       transition: all 0.2s;

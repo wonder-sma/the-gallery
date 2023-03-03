@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Comment from './../../elements/comment';
 
 const StyledCard = styled.li`
   width: 300px;
@@ -24,25 +23,15 @@ const StyledCard = styled.li`
 
 type CardProps = {
   children?: React.ReactNode;
-  comment?: string;
-  onChange?: (id: string, comment: string) => void;
-  id: string;
+  image: React.ReactNode;
 }
 
 const CardLayout: React.FC<CardProps> = (props) => {
 
   return (
     <StyledCard className="card-layout">
-      <div className="card-layout__image">
-        {props.children}
-      </div>
-      <Comment
-        value={props.comment}
-        onChange={props.onChange}
-        id={props.id}
-        maxLength={38}
-        className="card-layout-comment"
-      />
+      <div className="card-layout__image">{props.image}</div>
+      {props.children}
     </StyledCard>
   );
 };

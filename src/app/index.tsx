@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Gallery from '../components/container/gallery';
+import Gallery from '../container/gallery';
 import { loadImageAction } from '../store/images/actions';
 import { useActions } from '../hooks/useActions';
 

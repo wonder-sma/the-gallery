@@ -1,5 +1,5 @@
 import { AppDispatch } from '../index';
-import { ImagesActionTypes, Errors } from './types';
+import { ImagesActionTypes, Errors, Loadings } from './types';
 import { v4 as uuidv4 } from 'uuid';
 
 export const loadImageAction = (payload: { id: string; url: string; comment: string; }) => {
@@ -43,3 +43,8 @@ export const changeCommentAction = (payload: { id: string, comment: string }) =>
   localStorage[payload.id] = JSON.stringify(value);
   return { type: ImagesActionTypes.CLEAR_ERRORS, payload };
 };
+
+export const setLoadingAction = (payload: Loadings) => {
+  return { type: ImagesActionTypes.SET_LOADING, payload };
+};
+

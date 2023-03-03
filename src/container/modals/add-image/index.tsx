@@ -1,12 +1,12 @@
 import React, { FormEvent, useCallback, useEffect, useState } from 'react';
-import { useActions } from '../../../../hooks/useActions';
-import { useTypedSelector } from '../../../../hooks/useTypedSelector';
-import { Errors } from '../../../../store/images/types';
-import Button from '../../../elements/button';
-import Error from '../../../elements/error';
-import Form from '../../../elements/form';
-import Input from '../../../elements/input';
-import ModalLayout from '../../../layouts/modal-layout';
+import { useActions } from '../../../hooks/useActions';
+import { useTypedSelector } from '../../../hooks/useTypedSelector';
+import { Errors } from '../../../store/images/types';
+import Button from '../../../components/elements/button';
+import Error from '../../../components/elements/error';
+import Form from '../../../components/elements/form';
+import Input from '../../../components/elements/input';
+import ModalLayout from '../../../components/layouts/modal-layout';
 
 const AddImageModal = () => {
   const [url, setUrl] = useState<string>('');
