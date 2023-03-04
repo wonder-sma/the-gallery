@@ -15,16 +15,17 @@ const Card = (props: { item: ImageType }) => {
 
   useEffect(() => {
     if (imageRef.current) {
+      const img = (imageRef.current as HTMLImageElement);
       const onLoad = () => {
         setLoadingAction({ [props.item.id]: false });
         removeEventListener('load', onLoad);
       };
-      if (!imageRef.current.complete) {
-        imageRef.current.addEventListener('load', onLoad, { once: true });
+      if (!img.complete) {
+        img.addEventListener('load', onLoad, { once: true });
         setLoadingAction({ [props.item.id]: true });
       }
     }
-  }, [props.item.url, imageRef.current]);
+  }, [imageRef.current]);
 
   const openShowImageModal = useCallback((url: string) => {
     openModalAction({ name: 'showImageModal', isOpen: true, data: { url } });

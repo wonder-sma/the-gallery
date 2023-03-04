@@ -56,6 +56,11 @@ npm run build
   npm run test
   ```
 
+- Clear Jest cache
+  ```bash
+  npm run clear_jest
+  ```
+
 ## License
 
 This project is licensed under the MIT License.
