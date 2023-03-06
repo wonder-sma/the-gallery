@@ -6,7 +6,7 @@ import Image from 'components/elements/image';
 import Comment from 'components/elements/comment';
 import UploadIndicator from 'components/elements/upload-indicator';
 import CardLayout from 'components/layouts/card-layout';
-import { Image as ImageType } from 'store/images/types';
+import { Image as ImageType, Loadings } from 'store/images/types';
 
 const Card = (props: { item: ImageType }) => {
   const { loadings } = useTypedSelector(state => state.imagesReducer);
@@ -38,7 +38,7 @@ const Card = (props: { item: ImageType }) => {
 
   return (
     <CardLayout image={
-      loadings[props.item.id]
+      (loadings as Loadings)[props.item.id]
         ? <UploadIndicator color="darkcyan" />
         : <Image
           ref={imageRef}
@@ -47,7 +47,7 @@ const Card = (props: { item: ImageType }) => {
           onClick={openShowImageModal}
         />
     }>
-      {!loadings[props.item.id] && <Comment
+      {!(loadings as Loadings)[props.item.id] && <Comment
         value={props.item.comment}
         onChange={changeComment}
         id={props.item.id}

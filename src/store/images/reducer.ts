@@ -10,7 +10,12 @@ export const imagesReducer = (state = initialState, action: ImagesAction): Image
   switch (action.type) {
 
     case ImagesActionTypes.LOAD_IMAGE:
-      return { ...state, images: [...state.images, action.payload.image], errors: {} };
+      return {
+        ...state,
+        images: [...state.images, action.payload.image],
+        errors: {},
+        loadings: { ...state.loadings, [action.payload.image.id]: false }
+      };
 
     case ImagesActionTypes.SET_ERROR:
       return { ...state, errors: { ...state.errors, ...action.payload.errors } };

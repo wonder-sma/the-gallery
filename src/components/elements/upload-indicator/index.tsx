@@ -27,7 +27,6 @@ const UploadIndicator: React.FC<UploadIndicatorProps> = (props) => {
       className={'upload-indicator' + `${props.className ? ` upload-indicator_${props.className}` : ''}`}
     >
       <svg
-        xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100"
         className={'upload-indicator__image' + `${props.className ? ` upload-indicator__image_${props.className}` : ''}`}
       >

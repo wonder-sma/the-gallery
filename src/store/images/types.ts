@@ -13,7 +13,7 @@ export type Loadings = { [key: string]: boolean };
 export type ImagesState = {
   images: Array<Image> | [];
   errors: Errors | {};
-  loadings: Loadings;
+  loadings: Loadings | {};
 }
 
 export enum ImagesActionTypes {

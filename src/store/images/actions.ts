@@ -12,11 +12,9 @@ export const loadImageAction = (payload: { id: string; url: string; comment: str
         const httpRegex = /^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b[-a-zA-Z0-9()@:%_+.~#?&\/=]*$/;
         const isValidUrl = httpRegex.test(url.trim());
         if (!isValidUrl) {
-          console.error('Please enter a valid url');
           errors = { ...errors, url: 'Please enter a valid url' };
         }
         if (!(image.comment.length <= 38)) {
-          console.error('Comment must be no more than 38 characters');
           errors = { ...errors, comment: 'Comment must be no more than 38 characters' };
         }
         if (!Object.keys(errors).length) {
