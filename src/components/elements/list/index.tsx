@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Image } from '../../../store/images/types';
+import { Image } from 'store/images/types';
 
 const StyledList = styled.ul`
   display: flex;

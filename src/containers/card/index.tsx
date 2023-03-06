@@ -1,12 +1,12 @@
 import React, { useCallback, useEffect, useRef } from 'react';
-import { useActions } from '../../hooks/useActions';
-import { useTypedSelector } from '../../hooks/useTypedSelector';
-import { changeCommentAction, setLoadingAction } from '../../store/images/actions';
-import Image from '../../components/elements/image';
-import Comment from '../../components/elements/comment';
-import UploadIndicator from '../../components/elements/upload-indicator';
-import CardLayout from '../../components/layouts/card-layout';
-import { Image as ImageType } from '../../store/images/types';
+import { useActions } from 'hooks/useActions';
+import { useTypedSelector } from 'hooks/useTypedSelector';
+import { changeCommentAction, setLoadingAction } from 'store/images/actions';
+import Image from 'components/elements/image';
+import Comment from 'components/elements/comment';
+import UploadIndicator from 'components/elements/upload-indicator';
+import CardLayout from 'components/layouts/card-layout';
+import { Image as ImageType } from 'store/images/types';
 
 const Card = (props: { item: ImageType }) => {
   const { loadings } = useTypedSelector(state => state.imagesReducer);

@@ -1,9 +1,9 @@
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { act, screen } from '@testing-library/react';
-import { renderWithRedux } from '../../helpers/renderWithRedux';
-import { store } from '../../store';
-import { ImagesActionTypes } from '../../store/images/types';
+import { renderWithRedux } from 'helpers/renderWithRedux';
+import { ImagesActionTypes } from 'store/images/types';
+import { store } from 'store/';
 import Card from './';
 
 describe('Card', () => {

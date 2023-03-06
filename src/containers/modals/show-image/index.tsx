@@ -1,8 +1,8 @@
 import React, { useCallback, useRef } from 'react';
-import { useActions } from '../../../hooks/useActions';
-import { useTypedSelector } from '../../../hooks/useTypedSelector';
-import Image from '../../../components/elements/image';
-import ModalLayout from '../../../components/layouts/modal-layout';
+import { useActions } from 'hooks/useActions';
+import { useTypedSelector } from 'hooks/useTypedSelector';
+import Image from 'components/elements/image';
+import ModalLayout from 'components/layouts/modal-layout';
 
 const ShowImageModal = () => {
   const { showImageModal } = useTypedSelector(state => state.modalsReducer);
@@ -20,4 +20,4 @@ const ShowImageModal = () => {
   );
 };
 
-export default React.memo(ShowImageModal);
+export default ShowImageModal;

@@ -1,10 +1,10 @@
 import React, { useCallback } from 'react';
-import { useActions } from '../../hooks/useActions';
-import { useTypedSelector } from '../../hooks/useTypedSelector';
-import { Image as ImageType } from '../../store/images/types';
-import Button from '../../components/elements/button';
-import List from '../../components/elements/list';
-import GalleryLayout from '../../components/layouts/gallery-layout';
+import { useActions } from 'hooks/useActions';
+import { useTypedSelector } from 'hooks/useTypedSelector';
+import { Image as ImageType } from 'store/images/types';
+import Button from 'components/elements/button';
+import List from 'components/elements/list';
+import GalleryLayout from 'components/layouts/gallery-layout';
 import Card from '../card';
 import AddImageModal from '../modals/add-image';
 import ShowImageModal from '../modals/show-image';
