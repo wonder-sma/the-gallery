@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "jest",
+    "test": "jest --config=jest.config.ts --maxWorkers=30%",
     "clear_jest": "jest --clearCache"
   },
   "dependencies": {

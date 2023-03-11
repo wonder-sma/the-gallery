@@ -3,7 +3,8 @@ export default {
     '^.+\\.tsx?$': 'ts-jest'
   },
   testEnvironment: 'jsdom',
-  testEnvironmentOptions: {
-    'resources': 'usable'
-  },
+  moduleDirectories: [
+    'node_modules',
+    'src'
+  ],
 };

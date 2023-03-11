@@ -1,4 +1,6 @@
-export default [
+import { Image } from '../store/images/types';
+
+export const mockData: Image[] = [
   { id: '1', url: 'https://via.placeholder.com/800x800&text=image1', comment: 'image1' },
   { id: '2', url: 'https://via.placeholder.com/300x300&text=image2', comment: '' },
   { id: '3', url: 'https://via.placeholder.com/800x800&text=image3', comment: 'image3' },

@@ -3,7 +3,7 @@ import '@testing-library/jest-dom/extend-expect';
 import { render, screen } from '@testing-library/react';
 import Image from '../image';
 import List from './';
-import mockData from 'mock/';
+import { mockData } from 'mock/';
 
 describe('List', () => {
   it('Should render all items from the items property', async () => {
