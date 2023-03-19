@@ -39,7 +39,9 @@ const Card = (props: { item: ImageType }) => {
   return (
     <CardLayout image={
       (loadings as Loadings)[props.item.id]
-        ? <UploadIndicator color="darkcyan" />
+        ? <UploadIndicator
+          colors={['#F56565', '#ED8936', '#ECC94B', '#48BB78', '#38B2AC', '#4299E1', '#667EEA', '#9F7AEA', '#008b8b']}
+        />
         : <Image
           ref={imageRef}
           url={props.item.url}
