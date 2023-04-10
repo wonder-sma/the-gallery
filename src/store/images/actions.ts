@@ -11,6 +11,9 @@ export const loadImageAction = (payload: { id: string; url: string; comment: str
       if (!id) {
         const httpRegex = /^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b[-a-zA-Z0-9()@:%_+.~#?&\/=]*$/;
         const isValidUrl = httpRegex.test(url.trim());
+        if (isValidUrl && url.startsWith('http://')) {
+          errors = { ...errors, url: 'Please enter a secure url, such as https://site.com' };
+        }
         if (!isValidUrl) {
           errors = { ...errors, url: 'Please enter a valid url' };
         }
